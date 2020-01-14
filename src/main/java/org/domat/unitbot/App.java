@@ -4,10 +4,11 @@ public class App {
 
     public static void main(String[] args) {
         Window window = new Window();
-        Connection log = new Connection();
+        Database log = new Database();
         System.out.println("Hello World");
-        Connection.logBDD();
         window.setWindow();
+        log.LogBDD();
+
 
     }
 
