@@ -13,16 +13,18 @@ public class Window {
     JButton button = new JButton("Log in");
     JTextField user = new JTextField(10);
     JPasswordField password = new JPasswordField(10);
+    JCheckBox save = new JCheckBox("Save");
 
     public void setWindow() {
         window.setTitle("Ma première fenêtre Java");
-        window.setSize(400, 500);
+        window.setSize(400, 100);
         window.setLocationRelativeTo(null);
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setLayout(new FlowLayout());
         window.add(user);
         window.add(password);
         window.add(button);
+        window.add(save);
         window.setVisible(true);
     }
 }

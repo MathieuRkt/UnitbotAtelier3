@@ -9,7 +9,7 @@ public class Database {
         try {
             Connection connection =  DriverManager.getConnection("jdbc:mysql://localhost:8889/unibot",
                     "root", "");
-            String request = "SELECT * FROM Utilisateur";
+            String request = "SELECT email, mot_de_passe FROM Utilisateurs";
             Statement statement = connection.createStatement();
             ResultSet results = statement.executeQuery(request);
             System.out.println("test");
